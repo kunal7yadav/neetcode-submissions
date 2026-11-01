@@ -7,7 +7,7 @@ public:
         }
         int i = 0 ;
         int count = 0 ;
-        while(q.size()>0 && count!=q.size()){
+        while(q.size()>0 && count!=100000){
             if(q.front()==sandwiches[i]){
                 i++;
                 q.pop();
