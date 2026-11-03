@@ -9,12 +9,11 @@ public:
         }
         vector<int>ans(n);
         for(int i = 0 ; i<n ; i++){
-            ans[q.front()]=deck[i];
+            int idx = q.front();
             q.pop();
-            int x = q.front();
+            q.push(q.front());
             q.pop();
-            q.push(x);
-
+            ans[idx] = deck[i];
         }
         return ans;
     }
